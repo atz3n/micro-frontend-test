@@ -16,10 +16,8 @@ const AuthApp: React.FC<Props> = ({ onSignIn }) => {
         const { onParentNavigate } = mount(ref.current, {
             initialPath: history.location.pathname,
             onNavigate: ({ pathname }) => {
-                const _pathname = history.location.pathname;
-
-                if (_pathname !== pathname) {
-                history.push(pathname);
+                if (history.location.pathname !== pathname) {
+                    history.push(pathname);
                 }
             },
             onSignIn

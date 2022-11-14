@@ -21,7 +21,7 @@ const history = createBrowserHistory();
 const StylesProviderAsAny = StylesProvider as any;
 
 
-export default function App(): ReactElement {
+const App: React.FC = () => {
     const [isSignedIn, setIsSignedIn] = useState(false);
 
     useEffect(() => {
@@ -57,3 +57,6 @@ export default function App(): ReactElement {
         </Router>
     );
 };
+
+
+export default App;
