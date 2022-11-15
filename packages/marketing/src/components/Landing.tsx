@@ -94,7 +94,7 @@ const Landing: React.FC = () => {
                             short so folks don&apos;t simply skip over it entirely.
                         </Typography>
                         <div className={classes.heroButtons}>
-                            <Grid container spacing={2} justify="center">
+                            <Grid container spacing={2} justifyContent="center">
                                 <Grid item>
                                     <Link to="/pricing">
                                         <Button variant="contained" color="primary">
