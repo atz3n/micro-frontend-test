@@ -12,13 +12,8 @@ const devConfig = {
         publicPath: 'http://localhost:8082/',
     },
     devServer: {
-        static: {
-            directory: path.join(__dirname, 'dist'),
-        },
         port: 8082,
-        historyApiFallback: {
-            index: 'index.html',
-        },
+        historyApiFallback: true
     },
     plugins: [
         new ModuleFederationPlugin({
