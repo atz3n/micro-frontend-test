@@ -15,7 +15,7 @@ interface MountConfig {
 export function mount(el: Element, config: MountConfig) {
     const { onSignIn, onNavigate, defaultHistory, initialPath } = config;
     const history = defaultHistory || createMemoryHistory({
-        initialEntries: initialPath ? [ initialPath ] : [],
+        initialEntries: initialPath ? [ initialPath ] : []
     });
 
     if (onNavigate) {
