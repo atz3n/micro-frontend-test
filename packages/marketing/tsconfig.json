@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "alwaysStrict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "sourceMap": true,
+        "strict": true,
+        "jsx": "react",
+        "composite": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedParameters": true,
+        "skipLibCheck": true,
+    },
+    "include": ["src"]
+}
